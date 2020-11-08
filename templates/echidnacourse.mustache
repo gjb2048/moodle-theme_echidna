@@ -82,9 +82,12 @@
 
                 </section>
                 {{#hasblocks}}
-                <section id="echidna-blocks-unwanted" data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
                     {{{ sidepreblocks }}}
                 </section>
+                {{/hasblocks}}
+                {{^hasblocks}}
+                <div class="col-12 text-center"><h1>{{#str}}noblocks, theme_echidna{{/str}}</h1></div>
                 {{/hasblocks}}
             </div>
         </div>

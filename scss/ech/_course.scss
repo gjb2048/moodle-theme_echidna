@@ -1,8 +1,5 @@
 .editing .section .activity:hover,
 .editing .section .activity.action-menu-shown {
     background-color: $echidnalight;
-}
-
-.editing #echidna-blocks-unwanted {
-    display:none;
+    color: map-get($theme-colors, 'primary');
 }
