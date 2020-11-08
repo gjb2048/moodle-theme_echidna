@@ -1,18 +1,5 @@
-$echidnablue: #5cadff; !default;
+$echidnablue: #5cadff !default;
 
 $theme-colors: (
-  "echidnablue": $echidnablue;
+  "echidnablue": $echidnablue
 );
-
-
-$theme-colors: () !default;
-$theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-), $theme-colors);

@@ -37,6 +37,8 @@ require_once($CFG->dirroot.'/theme/boost/lib.php');
  * @return string SCSS.
  */
 function theme_echidna_get_pre_scss($theme) {
+    global $CFG;
+
     static $boosttheme = null;
     if (empty($boosttheme)) {
         $boosttheme = theme_config::load('boost'); // Needs to be the Boost theme so that we get its settings.
