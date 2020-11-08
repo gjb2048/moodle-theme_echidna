@@ -2,3 +2,7 @@
 .editing .section .activity.action-menu-shown {
     background-color: $echidnalight;
 }
+
+.editing #echidna-blocks-unwanted {
+    display:none;
+}
