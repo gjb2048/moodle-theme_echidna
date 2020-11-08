@@ -55,5 +55,12 @@ $THEME->layouts = [
     'report' => array(
         'file' => 'echidnacolumns1.php',
         'regions' => array()
+    ),
+    // Main course page.
+    'course' => array(
+        'file' => 'echidnacourse.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('langmenu' => true),
     )
 ];
