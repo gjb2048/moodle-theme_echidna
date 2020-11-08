@@ -42,6 +42,7 @@ function theme_echidna_get_pre_scss($theme) {
         $boosttheme = theme_config::load('boost'); // Needs to be the Boost theme so that we get its settings.
     }
     $scss = theme_boost_get_pre_scss($boosttheme);
+    $scss .= file_get_contents($CFG->dirroot.'/theme/echidna/scss/echidna_pre.scss');
 
     return $scss;
 }
